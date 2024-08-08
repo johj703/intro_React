@@ -25,10 +25,7 @@ const grade = score >= 80 ? "A" : "B";
 // truthy, falsy
 // falsy : false, 0, "", null, undefined, NaN
 const getUserName = (user) => {
-    if (!user.name) {
-        return "신원미상";
-    }
-    return user.name;
+    return user.name || "신원미상";
 }
 
 const person = {
