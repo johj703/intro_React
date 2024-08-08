@@ -30,5 +30,6 @@ const getUserName = (user) => {
 
 const person = {
     age: 30,
+    name: "르순이",
 }
 console.log(getUserName(person))
