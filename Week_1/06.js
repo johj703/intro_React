@@ -30,4 +30,11 @@ const person = {
     age: 30,
     name: "르순이",
 }
-console.log(getUserName(person))
+// console.log(getUserName(person))
+
+// (2) 논리곱(&&) 연산자
+
+const loggedIn = true;
+const userName = "르탄이";
+
+loggedIn && console.log(`환영합니다 ${userName}`);
