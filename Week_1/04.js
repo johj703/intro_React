@@ -86,10 +86,12 @@ const lastFruit = fruits.pop();
 // reduce
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.reduce(function (누적된값, 일반값) {
+const result = numbers.reduce(function (누적된값, 일반값) {
     console.log("---------")
     console.log(누적된값);
     console.log(일반값);
 
     return 누적된값 + 일반값;
 });
+
+console.log("result => ", result)
