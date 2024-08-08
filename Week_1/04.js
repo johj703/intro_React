@@ -26,27 +26,37 @@ Object.assign(user, userDetails);
 // 배열
 // push, pop
 const fruits = ["Apple", "Banana"];
-console.log(fruits);
+// console.log(fruits);
 
 // orange를 추가
 fruits.push("Orange");
-console.log(fruits);
+// console.log(fruits);
 
 // orange를 제거
 const lastFruit = fruits.pop();
-console.log("----");
-console.log(lastFruit);
-console.log(fruits);
+// console.log("----");
+// console.log(lastFruit);
+// console.log(fruits);
 
 // map: 원본 배열에서 각 요소를 가공한 새로운 배열을 리턴하는 함수
 
 // 1) 배열 내의 모든 요소 각각에 대해
 // 2) 주어진 함수를 호출한 결과를 모아
 // 3) 새로운 배열을 반환
-const numbers = [1, 2, 3, 4, 5];
-const squared = numbers.map(function (num) {
-    return num * num;
-});
+// const numbers = [1, 2, 3, 4, 5];
+// const squared = numbers.map(function (num) {
+//     return num * num;
+// });
 
 // [1, 4, 9, 16, 25]
-console.log(squared);
+// console.log(squared);
+
+// filter
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers.filter(function (num) {
+    return num % 2 === 0;
+});
+
+// [2, 4]
+console.log(evenNumbers);
