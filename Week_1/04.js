@@ -25,15 +25,15 @@ Object.assign(user, userDetails);
 
 // 배열
 // push, pop
-const fruits = ["Apple", "Banana"];
+// const fruits = ["Apple", "Banana"];
 // console.log(fruits);
 
 // orange를 추가
-fruits.push("Orange");
+// fruits.push("Orange");
 // console.log(fruits);
 
 // orange를 제거
-const lastFruit = fruits.pop();
+// const lastFruit = fruits.pop();
 // console.log("----");
 // console.log(lastFruit);
 // console.log(fruits);
@@ -84,14 +84,20 @@ const lastFruit = fruits.pop();
 // })
 
 // reduce
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const result = numbers.reduce(function (누적된값, 일반값) {
-    console.log("---------")
-    console.log(누적된값);
-    console.log(일반값);
+// const result = numbers.reduce(function (누적된값, 일반값) {
+//     console.log("---------")
+//     console.log(누적된값);
+//     console.log(일반값);
 
-    return 누적된값 + 일반값;
-});
+//     return 누적된값 + 일반값;
+// });
 
-console.log("result => ", result)
+// console.log("result => ", result)
+
+// sort
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+fruits.sort();
+console.log(fruits);
