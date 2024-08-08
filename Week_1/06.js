@@ -52,8 +52,26 @@ const user = {
 };
 
 const result = user.printHello1?.();
-console.log(result);
+// console.log(result);
 
 // (4) null 병합 연산자(??)
 let userLocation = null;
-console.log(userLocation ?? "없는 위치")
+// console.log(userLocation ?? "없는 위치")
+
+// Null 병합 연산자
+// 논리합 연산자(||)
+
+const displayPreferences = (preference) => {
+    const textLength = preference.textLength || 50;
+    console.log("1 => ", textLength);
+
+    const itemsPerPage = preference.itemsPerPage ?? 10;
+    console.log("2 => ", itemsPerPage)
+}
+
+const userPreference = {
+    textLength: 0,
+    itemsPerPage: null,
+}
+
+displayPreferences(userPreference);
