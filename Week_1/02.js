@@ -8,11 +8,7 @@ const user = {
     printHello: () => console.log("hello"),
 };
 
-// 객체 접근 : 괄호 표기법
-const attribute = "name";
-console.log(user[attribute]);
+user.email = "jay@gmail.com"; // 추가
+user.age = 31; // 수정
 
-// 객체 접근 : 점 표기법(.)
-// console.log(user.name);
-// console.log(user.age);
-// user.printHello();
+console.log(user);
