@@ -10,5 +10,6 @@ const user = {
 
 user.email = "jay@gmail.com"; // 추가
 user.age = 31; // 수정
+delete user.isAdmen;
 
 console.log(user);
