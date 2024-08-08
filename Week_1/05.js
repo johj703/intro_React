@@ -71,13 +71,13 @@ const [, , thirdColor] = colors;
 /* 다음 자바스크립트 객체에서 name과 age를 디스트럭처링을 사용하여 추출하고 
 출력하는 코드를 작성하세요. */
 
-const person = {
-    name: "르탄이",
-    age: 25,
-    job: "개발자"
-};
+// const person = {
+//     name: "르탄이",
+//     age: 25,
+//     job: "개발자"
+// };
 
-const { name, age } = person;
+// const { name, age } = person;
 // console.log(`안녕하세요 ${name}님, ${age}살 입니다.`)
 
 // 문제2
@@ -120,8 +120,8 @@ const userInfo = {
     roomType: "Deluxe",
     date: "2023-05-30"
 }
-const result = confirmReservation(userInfo);
-console.log(result);
+// const result = confirmReservation(userInfo);
+// console.log(result);
 
 // Spread Operators => 객체나 배열을 복사할 때 많이 사용한다.
 const originalUser = {
@@ -142,4 +142,45 @@ const second = [4, 5, 6];
 
 // [1, 2, 3, 4, 5, 6]
 const combinedArray = [...first, ...second];
-console.log(combinedArray)
+// console.log(combinedArray)
+
+// 문제2
+/* 
+    다음 두 객체 `obj1`과 `obj2`가 주어졌을 때, 두 객체의 속성을 
+    스프레드 연산자를 사용하여 병합한 새 객체 `mergedObj`를 생성하고 
+    결과를 출력하세요.
+    단, 같은 이름의 키가 존재할 경우 `obj2`의 값이 우선하여 반영되어야 합니다. 
+    또한, `mergedObj`에서 `name` 속성의 값을 **'원장님'**으로 변경 후, 
+    원본 객체 `obj1`과 `obj2`가 변경되지 않는 것을 확인하세요.
+*/
+
+const obj1 = { name: "르탄이", age: 25 };
+const obj2 = { name: "르순이", email: "rsoony@sparta.com" };
+
+const mergedObject = { ...obj1, ...obj2 };
+// console.log("mergedObject", mergedObject);
+
+mergedObject.name = "원장님";
+// console.log(obj1);
+// console.log(obj2);
+
+// rest operator는 spread operator와 비슷하다.
+
+// (1) 함수의 매개변수
+// function sum(numbers) {
+//     return numbers.reduce((acc, cur) => acc + cur);
+// }
+
+// const result = sum([1, 2, 3, 4, 5]);
+// console.log(result);
+
+// (2) 객체 분해 할당 시, 여러 값을 그룹핑
+const person = {
+    name: "John",
+    age: 30,
+    country: "USA",
+    occupation: "Developer",
+};
+
+const { occupation, ...rest } = person;
+console.log("rest => ", rest);
