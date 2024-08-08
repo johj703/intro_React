@@ -6,6 +6,10 @@ const myPromise = new Promise(function (resolve, reject) {
     }
 });
 
-myPromise.then(function (value) {
-    console.log(value)
-})
+myPromise
+    .then(function (value) {
+        console.log(value)
+    })
+    .catch(function (value) {
+        console.log(value)
+    })
