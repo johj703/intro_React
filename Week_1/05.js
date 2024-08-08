@@ -56,5 +56,13 @@ const person = {
     name: "르순이",
     age: 28,
 };
-greet(person);
+// greet(person);
+
 // Spread Operators
+const colors = ["red", "green", "blue"];
+// const [firstColor, secondColor] = colors;
+const [, , thirdColor] = colors;
+
+// console.log(firstColor);
+// console.log(secondColor);
+console.log(thirdColor);
