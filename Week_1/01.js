@@ -1,2 +1,2 @@
 console.log(testValue);
-const testValue = "Hello world";
+var testValue = "Hello world";
