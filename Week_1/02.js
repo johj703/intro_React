@@ -8,6 +8,7 @@ const user = {
     printHello: () => console.log("hello"),
 };
 
-// 객체 접근
-console.log(user.name);
-console.log(user.age);
+// 객체 접근 : 점 표기법(.)
+// console.log(user.name);
+// console.log(user.age);
+// user.printHello();
