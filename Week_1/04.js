@@ -7,3 +7,7 @@ const user = {
 };
 const keys = Object.keys(user);
 console.log(keys);
+
+// (2) Object.values()
+const values = Object.values(user);
+console.log(values);
