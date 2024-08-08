@@ -48,8 +48,8 @@ const { name, price } = item;
 console.log("name => ", name);
 console.log("price => ", price);
 
-function greet(person) {
-    console.log(`안녕하세요. 제 이름은 ${person.name}입니다. 나이는 ${person.age}에요.`);
+function greet({ name, age }) {
+    console.log(`안녕하세요. 제 이름은 ${name}입니다. 나이는 ${age}에요.`);
 }
 
 const person = {
