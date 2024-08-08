@@ -20,6 +20,18 @@ console.log(
 
 console.log(`감사합니다. ${customer.name}님!`)
 
+const orderDetails = "고객 : " + customer.name + "\n" +
+    "상품 : " + item.name + "\n" +
+    "가격 : " + item.price;
+
+console.log(orderDetails);
+
+const orderDetails2 = `고객 : ${customer.name}
+상품 : ${item.name}
+가격 : ${item.price}
+`;
+
+console.log(orderDetails2)
 // Destructuring
 
 // Spread Operators
