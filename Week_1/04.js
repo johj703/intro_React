@@ -6,19 +6,28 @@ const user = {
     isAdmin: true,
 };
 const keys = Object.keys(user);
-console.log(keys);
+// console.log(keys);
 
 // (2) Object.values()
 const values = Object.values(user);
-console.log(values);
+// console.log(values);
 
 // (3) entries - 배열 안에 배열을 만들어서 속성별로 Key - Value 값을 나타내준다.
 const entries = Object.entries(user);
-console.log(entries);
+// console.log(entries);
 
 // (4) assign
 const userDetails = {
     occupation: "개발자",
 };
 Object.assign(user, userDetails);
-console.log(user);
+// console.log(user);
+
+// 배열
+// push, pop
+const fruits = ["Apple", "Banana"];
+console.log(fruits);
+
+// orange를 추가
+fruits.push("Orange");
+console.log(fruits);
