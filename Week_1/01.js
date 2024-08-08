@@ -1,5 +1,10 @@
-for (var i = 0; i < 3; i++) {
-    console.log(i)
+function testFunction() {
+    var test = "any words";
+    if (true) {
+        var test = "changed value";
+    }
+
+    console.log(test)
 }
 
-console.log(i)
+testFunction();
