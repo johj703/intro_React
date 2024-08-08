@@ -18,6 +18,8 @@ console.log(
     "원에 구매하셨습니다."
 );
 
+console.log(`감사합니다. ${customer.name}님!`)
+
 // Destructuring
 
 // Spread Operators
