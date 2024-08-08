@@ -24,9 +24,7 @@ const grade = score >= 80 ? "A" : "B";
 // (1) 논리합 연산자(||)
 // truthy, falsy
 // falsy : false, 0, "", null, undefined, NaN
-const getUserName = (user) => {
-    return user.name || "신원미상";
-}
+const getUserName = (user) => user.name || "신원미상";
 
 const person = {
     age: 30,
