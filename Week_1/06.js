@@ -53,3 +53,7 @@ const user = {
 
 const result = user.printHello1?.();
 console.log(result);
+
+// (4) null 병합 연산자(??)
+let userLocation = null;
+console.log(userLocation ?? "없는 위치")
