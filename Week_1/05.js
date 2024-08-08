@@ -101,7 +101,7 @@ const { title, release: { year }, } = movie;
 const numbers = [10, 20, 30, 40, 50];
 
 // 배열에서의 구조분해할당(index)은 위치가 중요
-const [first, , third] = numbers;
+// const [first, , third] = numbers;
 // console.log(first);
 // console.log(third);
 
@@ -131,8 +131,15 @@ const originalUser = {
 
 // 어디에 복사!
 // const updatedUser = originalUser;
-const updatedUser = { ...originalUser }
-updatedUser.name = "르순이",
+// const updatedUser = { ...originalUser }
+// updatedUser.name = "르순이",
 
-    console.log("원본 => ", originalUser);
-console.log("복사본 => ", updatedUser);
+//     console.log("원본 => ", originalUser);
+// console.log("복사본 => ", updatedUser);
+
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+// [1, 2, 3, 4, 5, 6]
+const combinedArray = [...first, ...second];
+console.log(combinedArray)
