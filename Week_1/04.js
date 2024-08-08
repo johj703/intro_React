@@ -52,33 +52,44 @@ const lastFruit = fruits.pop();
 // console.log(squared);
 
 // filter
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const evenNumbers = numbers.filter(function (num) {
-    return num % 2 === 0;
-});
+// const evenNumbers = numbers.filter(function (num) {
+//     return num % 2 === 0;
+// });
 
 // [2, 4]
 // console.log(evenNumbers);
 
-const 동영상리스트 = {
-    {
-    아이디: 1,
-        제목: "동영상01",
-            썸네일이미지: "image01.jpg"
-},
-{
-    아이디: 2,
-        제목: "동영상02",
-            썸네일이미지: "image02.jpg"
-},
-{
-    아이디: 3,
-        제목: "동영상03",
-            썸네일이미지: "image03.jpg"
-},
-};
+// const 동영상리스트 = {
+//     {
+//     아이디: 1,
+//         제목: "동영상01",
+//             썸네일이미지: "image01.jpg"
+// },
+// {
+//     아이디: 2,
+//         제목: "동영상02",
+//             썸네일이미지: "image02.jpg"
+// },
+// {
+//     아이디: 3,
+//         제목: "동영상03",
+//             썸네일이미지: "image03.jpg"
+// },
+// };
 
-const 필터링된동영상리스트 = 동영상리스트.filter(function (영상) {
-    return 영상.제목 === "동영상02";
-})
+// const 필터링된동영상리스트 = 동영상리스트.filter(function (영상) {
+//     return 영상.제목 === "동영상02";
+// })
+
+// reduce
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.reduce(function (누적된값, 일반값) {
+    console.log("---------")
+    console.log(누적된값);
+    console.log(일반값);
+
+    return 누적된값 + 일반값;
+});
