@@ -31,3 +31,10 @@ console.log(fruits);
 // orange를 추가
 fruits.push("Orange");
 console.log(fruits);
+
+// orange를 제거
+const lastFruit = fruits.pop();
+console.log("----");
+console.log(lastFruit);
+console.log(fruits);
+
