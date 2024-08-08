@@ -15,3 +15,10 @@ console.log(values);
 // (3) entries - 배열 안에 배열을 만들어서 속성별로 Key - Value 값을 나타내준다.
 const entries = Object.entries(user);
 console.log(entries);
+
+// (4) assign
+const userDetails = {
+    occupation: "개발자",
+};
+Object.assign(user, userDetails);
+console.log(user);
