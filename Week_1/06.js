@@ -37,4 +37,19 @@ const person = {
 const loggedIn = true;
 const userName = "르탄이";
 
-loggedIn && console.log(`환영합니다 ${userName}`);
+// loggedIn && console.log(`환영합니다 ${userName}`);
+
+// (3) optional chaining
+const user = {
+    profile2: {
+        name: "르탄이",
+        details: {
+            age: 30,
+            location: "서울시 강남구",
+        }
+    },
+    printHello: () => console.log("Hello"),
+};
+
+const result = user.printHello1?.();
+console.log(result);
