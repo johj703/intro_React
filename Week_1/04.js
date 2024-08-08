@@ -97,7 +97,14 @@ Object.assign(user, userDetails);
 // console.log("result => ", result)
 
 // sort
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits);
-fruits.sort();
-console.log(fruits);
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// fruits.sort();
+// console.log(fruits);
+
+const numbers = [40, 100, 1, 5, 25];
+numbers.sort(function (a, b) {
+    return a - b;
+});
+
+console.log(numbers);
