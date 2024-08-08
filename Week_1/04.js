@@ -38,3 +38,15 @@ console.log("----");
 console.log(lastFruit);
 console.log(fruits);
 
+// map: 원본 배열에서 각 요소를 가공한 새로운 배열을 리턴하는 함수
+
+// 1) 배열 내의 모든 요소 각각에 대해
+// 2) 주어진 함수를 호출한 결과를 모아
+// 3) 새로운 배열을 반환
+const numbers = [1, 2, 3, 4, 5];
+const squared = numbers.map(function (num) {
+    return num * num;
+});
+
+// [1, 4, 9, 16, 25]
+console.log(squared);
