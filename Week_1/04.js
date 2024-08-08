@@ -59,4 +59,26 @@ const evenNumbers = numbers.filter(function (num) {
 });
 
 // [2, 4]
-console.log(evenNumbers);
+// console.log(evenNumbers);
+
+const 동영상리스트 = {
+    {
+    아이디: 1,
+        제목: "동영상01",
+            썸네일이미지: "image01.jpg"
+},
+{
+    아이디: 2,
+        제목: "동영상02",
+            썸네일이미지: "image02.jpg"
+},
+{
+    아이디: 3,
+        제목: "동영상03",
+            썸네일이미지: "image03.jpg"
+},
+};
+
+const 필터링된동영상리스트 = 동영상리스트.filter(function (영상) {
+    return 영상.제목 === "동영상02";
+})
